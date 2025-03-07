@@ -36,6 +36,14 @@ const APP_LINKS = [
   { label: "Parametric page with slugs", path: "/slugs/this/is/nested" },
   { label: "Grouping folder 1", path: "/router-groups/group-subfolder-1" },
   { label: "Grouping folder 2", path: "/router-groups/group-subfolder-2" },
+  {
+    label: "Server component with search params",
+    path: "/search-params/123/server-component?q=query&lang=it&start=5",
+  },
+  {
+    label: "Client component with search params",
+    path: "/search-params/456/client-component?q=re-query&lang=en&start=8",
+  },
   { label: "Global not found", path: "/wrong-link" },
   { label: "Nested not found", path: "/slugs/other" },
 ];

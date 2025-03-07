@@ -1,10 +1,21 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const SlugPage = async ({
-  params,
-}: {
+type Props = {
   params: Promise<{ paramsList: string[] }>;
-}) => {
+};
+
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
+  const { paramsList } = await params;
+  return {
+    title: "Title overwrite in the slug page",
+    description: `metadata created dynamically to show the paramsList has length ${paramsList.length}`,
+  };
+};
+
+const SlugPage = async ({ params }: Props) => {
   // The attribute name "paramsList" is the same we have in the slug folder name
   const { paramsList } = await params;
 

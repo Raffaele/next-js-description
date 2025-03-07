@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { ShowPath } from "@/components/ShowPath";
+
+export const metadata: Metadata = {
+  title: "Title overwritten in layout",
+  description: "Description overwritten in layout.tsx file",
+};
 
 const NestedLayout = ({
   children,
@@ -19,6 +25,10 @@ const NestedLayout = ({
       <p>
         As you can see the folder wrapped in parenthesis is called router group
         and it's not included in the browser path
+      </p>
+      <p>
+        This layout overwrite the metadata with static method for every page
+        under this group
       </p>
 
       <hr />
