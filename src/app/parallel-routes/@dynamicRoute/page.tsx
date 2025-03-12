@@ -5,7 +5,7 @@ const DynamicRoute = async () => {
     <div>
       <h5>This is a dynamic route</h5>
       <div>
-        <Link href="/parallel-routes/sub-route">Go to parallel routes</Link>
+        <Link href="/parallel-routes/sub-route">Go to sub route</Link>
       </div>
     </div>
   );
