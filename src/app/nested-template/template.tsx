@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const NestedLayout = ({
+const NestedTemplate = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -10,19 +10,17 @@ const NestedLayout = ({
   const [text, setText] = useState("");
   return (
     <div>
-      <h2>Nested layout</h2>
+      <h2>Nested template</h2>
       <p>
-        There is a <code>layout.tsx</code> file in{" "}
-        <code>app/nested-layout</code> folder <code>app/nested-layout</code>.
+        There is a <code>template.tsx</code> file in{" "}
+        <code>app/nested-template</code> folder <code>app/nested-template</code>
+        .
         <br />
-        That component will wrap all the pages in <code>
-          /nested-layout
-        </code>{" "}
+        That component will wrap all the pages in <code>/nested-template</code>
         and in deeper path
       </p>
       <p>
-        The state is consistent in the layout independently which page we are
-        visiting
+        The state is initialised every time the user navigates in a new page
         <input
           type="text"
           value={text}
@@ -36,4 +34,4 @@ const NestedLayout = ({
   );
 };
 
-export default NestedLayout;
+export default NestedTemplate;

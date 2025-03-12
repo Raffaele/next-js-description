@@ -29,6 +29,14 @@ const APP_LINKS = [
     label: "Nested layout 2",
     path: "/nested-layout/second-layer",
   },
+  {
+    label: "Nested template 1",
+    path: "/nested-template",
+  },
+  {
+    label: "Nested template 2",
+    path: "/nested-template/second-layer",
+  },
   { label: "Parametric page (foo)", path: "/parametric/foo" },
   { label: "Parametric page (bar)", path: "/parametric/bar" },
   { label: "Parametric page (baz, foo)", path: "/parametric/baz/nested/foo" },
@@ -44,13 +52,14 @@ const APP_LINKS = [
     label: "Client component with search params",
     path: "/search-params/456/client-component?q=re-query&lang=en&start=8",
   },
+  { label: "Page with loading", path: "/page-with-loading" },
   { label: "Global not found", path: "/wrong-link" },
   { label: "Nested not found", path: "/slugs/other" },
 ];
 
 export const GlobalNavBar = () => {
   return (
-    <section className="p-4">
+    <section className="p-4 overflow-y-scroll max-h-[400px] border border-solid border-black">
       <h3 className="p-4 mb-4 font-bold leading-none tracking-tight text-gray-900 text-3xl dark:text-white">
         This is the navbar
       </h3>

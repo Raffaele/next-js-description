@@ -64,3 +64,9 @@ code {
   background-color: lightgray;
   display: inline-block;
 }
+
+input[type="text"]{
+  border: 1px gray solid;
+  margin: 0 5px;
+  padding: 3px;
+}
