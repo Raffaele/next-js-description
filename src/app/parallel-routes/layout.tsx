@@ -5,17 +5,24 @@ type Props = Readonly<{
   routeFast: React.ReactNode;
   routeSlow: React.ReactNode;
   routeWithError: React.ReactNode;
+  dynamicRoute: React.ReactNode;
 }>;
 
 const ParallelRoutesLayout = (props: Props) => {
-  const { children, routeFast, routeSlow, routeWithError } = props;
+  const { children, routeFast, routeSlow, routeWithError, dynamicRoute } =
+    props;
 
   return (
     <div>
       <div>{children}</div>
-      <Card title="Fast loading route">{routeFast}</Card>
-      <Card title="Slow loading route">{routeSlow}</Card>
-      <Card title="Route with error">{routeWithError}</Card>
+      <div className="flex">
+        <Card title="Fast loading route">{routeFast}</Card>
+        <Card title="Slow loading route">{routeSlow}</Card>
+        <Card title="Route with error">{routeWithError}</Card>
+      </div>
+      <div>
+        <Card title="Dynamic route">{dynamicRoute}</Card>
+      </div>
     </div>
   );
 };
