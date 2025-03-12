@@ -53,6 +53,7 @@ const APP_LINKS = [
     path: "/search-params/456/client-component?q=re-query&lang=en&start=8",
   },
   { label: "Page with loading", path: "/page-with-loading" },
+  { label: "Parallel routes", path: "/parallel-routes" },
   { label: "Global not found", path: "/wrong-link" },
   { label: "Nested not found", path: "/slugs/other" },
 ];

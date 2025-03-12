@@ -1,8 +1,7 @@
-const getDelay = async (delay = 1000) =>
-  new Promise((res) => setTimeout(() => res(null), delay));
+import { getAsyncDelay } from "@/lib/getAsyncDelay";
 
 const PageWithLoading = async () => {
-  await getDelay(3000);
+  await getAsyncDelay(3000);
   return (
     <div>
       <h3>Page loaded with delay</h3>
