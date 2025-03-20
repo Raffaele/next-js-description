@@ -55,7 +55,7 @@ const APP_LINKS = [
   { label: "Page with loading", path: "/page-with-loading" },
   { label: "Parallel routes", path: "/parallel-routes" },
   { label: "Intercepting routes", path: "/interceptor-example" },
-  { label: "Parallel interceptions", path: "/parallel-interceptions" },
+  // { label: "Parallel interceptions", path: "/parallel-interceptions" },
   { label: "Global not found", path: "/wrong-link" },
   { label: "Nested not found", path: "/slugs/other" },
 ];
